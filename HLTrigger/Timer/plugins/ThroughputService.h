@@ -7,8 +7,8 @@
 #include <functional>
 
 // TBB headers
-#include <tbb/concurrent_unordered_map.h>
-#include <tbb/concurrent_unordered_set.h>
+#include <hpx/concurrent/unordered_map.hpp>
+#include <hpx/concurrent/unordered_set.hpp>
 
 // ROOT headers
 #include <TH1F.h>

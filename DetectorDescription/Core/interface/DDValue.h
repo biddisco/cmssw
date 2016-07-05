@@ -9,8 +9,8 @@
 #include <vector>
 
 #include "DetectorDescription/Core/interface/DDValuePair.h"
-#include "tbb/concurrent_unordered_map.h"
-#include "tbb/concurrent_vector.h"
+#include "hpx/concurrent/unordered_map.hpp"
+#include "hpx/concurrent/concurrent_vector.hpp"
 
 /** A DDValue std::maps a std::vector of DDValuePair (std::string,double) to a name. Names of DDValues are stored
  transiently. Furthermore, an ID is assigned std::mapping to the name.

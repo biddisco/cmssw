@@ -6,7 +6,7 @@
 #include <mutex>
 #include <memory>
 
-#include "tbb/concurrent_unordered_map.h"
+#include "hpx/concurrent/unordered_map.hpp"
 #include <boost/utility.hpp>
 
 #include "FWCore/Utilities/interface/propagate_const.h"

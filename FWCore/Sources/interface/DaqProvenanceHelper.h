@@ -4,7 +4,7 @@
 #include <map>
 #include <string>
 #include <vector>
-#include "tbb/concurrent_unordered_map.h"
+#include "hpx/concurrent/unordered_map.hpp"
 
 
 #include "DataFormats/Provenance/interface/BranchDescription.h"

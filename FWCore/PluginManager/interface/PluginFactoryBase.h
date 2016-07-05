@@ -24,8 +24,8 @@
 #include <vector>
 #include <map>
 #include <atomic>
-#include "tbb/concurrent_unordered_map.h"
-#include "tbb/concurrent_vector.h"
+#include "hpx/concurrent/unordered_map.hpp"
+#include "hpx/concurrent/concurrent_vector.hpp"
 
 #include "FWCore/Utilities/interface/Signal.h"
 // user include files

@@ -8,7 +8,7 @@
 #include <string>
 #include <boost/regex.hpp>
 #include <iostream>
-#include "tbb/concurrent_unordered_map.h"
+#include "hpx/concurrent/unordered_map.hpp"
 
 //NOTE:  This should probably be rewritten so that we break the class name into a tree where the template arguments are the node.  On the way down the tree
 // we look for '<' or ',' and on the way up (caused by finding a '>') we can apply the transformation to the output string based on the class name for the

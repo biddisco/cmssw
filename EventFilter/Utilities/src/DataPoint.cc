@@ -7,7 +7,7 @@
 
 #include "EventFilter/Utilities/interface/DataPoint.h"
 
-#include <tbb/concurrent_vector.h>
+#include <hpx/concurrent/vector.hpp>
 
 #include <algorithm>
 #include <assert.h>

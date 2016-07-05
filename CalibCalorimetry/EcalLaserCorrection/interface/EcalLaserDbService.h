@@ -6,8 +6,7 @@
 #define EcalLaserDbService_h
 
 #include <memory>
-#include <tbb/concurrent_unordered_set.h>
-#include <tbb/concurrent_hash_map.h>
+#include <hpx/concurrent/unordered_set.hpp>
 
 
 #include "DataFormats/DetId/interface/DetId.h"

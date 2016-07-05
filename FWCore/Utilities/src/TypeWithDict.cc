@@ -19,7 +19,7 @@
 #include "TROOT.h"
 
 #include "boost/thread/tss.hpp"
-#include "tbb/concurrent_unordered_map.h"
+#include "hpx/concurrent/unordered_map.hpp"
 
 #include <cassert>
 #include <cstdio>

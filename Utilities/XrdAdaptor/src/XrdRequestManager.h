@@ -9,7 +9,7 @@
 #include <sys/stat.h>
 
 #include <boost/utility.hpp>
-#include "tbb/concurrent_unordered_set.h"
+#include "hpx/concurrent/unordered_set.hpp"
 
 #include "FWCore/Utilities/interface/EDMException.h"
 

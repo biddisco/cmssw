@@ -17,7 +17,7 @@
 #include <boost/format.hpp>
 
 // tbb headers
-#include <tbb/concurrent_vector.h>
+#include <hpx/concurrent/vector.h>
 
 // CMSSW headers
 #include "FWCore/ParameterSet/interface/ParameterSet.h"

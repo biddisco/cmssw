@@ -52,7 +52,7 @@
 #include <vector>
 
 #include <functional>
-#include "tbb/concurrent_unordered_set.h"
+#include "hpx/concurrent/unordered_set.hpp"
 
 namespace edm {
   class EventSetup;

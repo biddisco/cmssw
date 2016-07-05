@@ -12,7 +12,7 @@
 
 // system include files
 #include <vector>
-#include "tbb/concurrent_unordered_map.h"
+#include "hpx/concurrent/unordered_map.hpp"
 
 // user include files
 #include "FWCore/Common/interface/EventBase.h"

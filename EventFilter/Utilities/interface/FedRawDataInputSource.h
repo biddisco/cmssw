@@ -6,8 +6,8 @@
 #include <mutex>
 #include <condition_variable>
 #include <thread>
-#include "tbb/concurrent_queue.h"
-#include "tbb/concurrent_vector.h"
+#include "hpx/concurrent/queue.h"
+#include "hpx/concurrent/vector.hpp"
 
 #include "boost/filesystem.hpp"
 

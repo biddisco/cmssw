@@ -11,7 +11,7 @@ ProductProvenanceRetriever: Manages the per event/lumi/run per product provenanc
 #include "DataFormats/Provenance/interface/ProcessHistoryID.h"
 #include "FWCore/Utilities/interface/propagate_const.h"
 
-#include "tbb/concurrent_unordered_set.h"
+#include "hpx/concurrent/unordered_set.hpp"
 #include <memory>
 #include <set>
 #include <atomic>
