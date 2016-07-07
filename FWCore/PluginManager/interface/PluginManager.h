@@ -40,7 +40,7 @@ namespace edmplugin {
   
   struct PluginManagerPathHasher {
     size_t operator()(boost::filesystem::path const& iPath) const {
-      tbb::tbb_hash<std::string> hasher;
+      std::hash<std::string> hasher;
       return hasher( iPath.native() );
     }
   };
