@@ -49,7 +49,7 @@ namespace edm
       }
     };
   private:
-    tbb::concurrent_unordered_map<key_type,value_type,key_hash> m_map;
+    hpx::concurrent::unordered_map<key_type,value_type,key_hash> m_map;
   };
 
 }

@@ -13,7 +13,7 @@
 
 namespace edm {
   namespace {
-    typedef tbb::concurrent_unordered_map<TMethod const*, TypeWithDict> Map;
+    typedef hpx::concurrent::unordered_map<TMethod const*, TypeWithDict> Map;
     Map returnTypeMap;
   }
 

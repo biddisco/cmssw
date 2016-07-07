@@ -100,7 +100,7 @@ namespace ecaldqm{
     static WorkerFactoryStore* singleton();
 
   private:
-    tbb::concurrent_unordered_map<std::string, WorkerFactory> workerFactories_;
+    hpx::concurrent::unordered_map<std::string, WorkerFactory> workerFactories_;
   };
 
 }

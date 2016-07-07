@@ -212,9 +212,9 @@ private:
     std::vector<std::shared_ptr<Source> > m_activeSources;
     std::vector<std::shared_ptr<Source> > m_inactiveSources;
   
-    tbb::concurrent_unordered_set<std::string> m_disabledSourceStrings;
-    tbb::concurrent_unordered_set<std::string> m_disabledExcludeStrings;
-    tbb::concurrent_unordered_set<std::shared_ptr<Source>, SourceHash> m_disabledSources;
+    hpx::concurrent::unordered_set<std::string> m_disabledSourceStrings;
+    hpx::concurrent::unordered_set<std::string> m_disabledExcludeStrings;
+    hpx::concurrent::unordered_set<std::shared_ptr<Source>, SourceHash> m_disabledSources;
 
     // StatisticsSenderService wants to know what our current server is;
     // this holds last-successfully-opened server name

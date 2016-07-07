@@ -62,7 +62,7 @@ namespace edm {
       transitionIndex_=transitionIndex;
     }
 
-    mutable tbb::concurrent_unordered_set<ProductProvenance, ProductProvenanceHasher, ProductProvenanceEqual> entryInfoSet_;
+    mutable hpx::concurrent::unordered_set<ProductProvenance, ProductProvenanceHasher, ProductProvenanceEqual> entryInfoSet_;
     mutable std::atomic<const std::set<ProductProvenance>*> readEntryInfoSet_;
     edm::propagate_const<std::shared_ptr<ProductProvenanceRetriever>> nextRetriever_;
     std::shared_ptr<const ProvenanceReaderBase> provenanceReader_;

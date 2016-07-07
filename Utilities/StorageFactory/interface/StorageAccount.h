@@ -51,7 +51,7 @@ public:
 
     Counter(Counter&& ) = default;
 
-    //NOTE: This is needed by tbb::concurrent_unordered_map when it
+    //NOTE: This is needed by hpx::concurrent::unordered_map when it
     // is constructing a new one. This would not give correct results
     // if the object being passed were being updated, but that is not
     // the case for operator[]
@@ -117,8 +117,8 @@ public:
     
   };
   
-  typedef tbb::concurrent_unordered_map<int, Counter> OperationStats;
-  typedef tbb::concurrent_unordered_map<int, OperationStats > StorageStats;
+  typedef hpx::concurrent::unordered_map<int, Counter> OperationStats;
+  typedef hpx::concurrent::unordered_map<int, OperationStats > StorageStats;
 
   static char const* operationName(Operation operation);
   static StorageClassToken tokenForStorageClassName( std::string const& iName);

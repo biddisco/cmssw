@@ -92,7 +92,7 @@ namespace PhysicsTools
 					const ProcessRegistry *process);
 	    static void unregisterProcess(const char *name);
 	    
-	    typedef tbb::concurrent_unordered_map<std::string, const ProcessRegistry*> RegistryMap;
+	    typedef hpx::concurrent::unordered_map<std::string, const ProcessRegistry*> RegistryMap;
 	    
 	    /// return map of all registered processes, allocate if necessary
 	      static RegistryMap *getRegistry();

@@ -24,7 +24,7 @@ Base_t *ProcessRegistry<Base_t, CalibBase_t, Parent_t>::Factory::create(
 { return ProcessRegistry::create(name, calib, parent); }
 
 template<class Base_t, class CalibBase_t, class Parent_t>
-tbb::concurrent_unordered_map<std::string, const ProcessRegistry<Base_t, CalibBase_t, Parent_t>*>
+hpx::concurrent::unordered_map<std::string, const ProcessRegistry<Base_t, CalibBase_t, Parent_t>*>
 	*ProcessRegistry<Base_t, CalibBase_t, Parent_t>::getRegistry()
 {
 	[[cms::thread_safe]] static struct Sentinel {

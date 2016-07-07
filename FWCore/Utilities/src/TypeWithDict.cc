@@ -33,9 +33,9 @@
 namespace edm {
 
   namespace {
-    typedef tbb::concurrent_unordered_map<std::string, TypeWithDict> Map;
+    typedef hpx::concurrent::unordered_map<std::string, TypeWithDict> Map;
     Map typeMap;
-    typedef tbb::concurrent_unordered_map<std::string, FunctionWithDict> FunctionMap;
+    typedef hpx::concurrent::unordered_map<std::string, FunctionWithDict> FunctionMap;
     FunctionMap functionMap;
   }
    static

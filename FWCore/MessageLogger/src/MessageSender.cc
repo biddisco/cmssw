@@ -82,7 +82,7 @@ namespace  {
 
 [[cms::thread_safe]] static std::atomic<bool> errorSummaryIsBeingKept{false};
 //Each item in the vector is reserved for a different Stream
-[[cms::thread_safe]] static std::vector<tbb::concurrent_unordered_map<ErrorSummaryMapKey, AtomicUnsignedInt,ErrorSummaryMapKey::key_hash>> errorSummaryMaps;
+[[cms::thread_safe]] static std::vector<hpx::concurrent::unordered_map<ErrorSummaryMapKey, AtomicUnsignedInt,ErrorSummaryMapKey::key_hash>> errorSummaryMaps;
 
 MessageSender::MessageSender( ELseverityLevel const & sev, 
 			      ELstring const & id,

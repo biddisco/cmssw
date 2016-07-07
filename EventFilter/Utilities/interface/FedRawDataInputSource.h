@@ -217,7 +217,7 @@ struct InputFile {
   int nEvents_;
   unsigned int nProcessed_;
 
-  tbb::concurrent_vector<InputChunk*> chunks_;
+  hpx::concurrent::concurrent_vector<InputChunk*> chunks_;
 
   uint32_t  bufferPosition_ = 0;
   uint32_t  chunkPosition_ = 0;

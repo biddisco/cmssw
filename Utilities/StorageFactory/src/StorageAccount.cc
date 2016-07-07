@@ -32,7 +32,7 @@ namespace {
   };
   
   //Storage class names to the value of the token to which they are assigned
-  tbb::concurrent_unordered_map<std::string, int> s_nameToToken;
+  hpx::concurrent::unordered_map<std::string, int> s_nameToToken;
   std::atomic<int> s_nextTokenValue{0};
 }
 

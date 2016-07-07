@@ -100,7 +100,7 @@ public:
 /// Keeps different SingleInvokers for each dynamic type of the objects passed to invoke()
 struct LazyInvoker {
   typedef std::shared_ptr<SingleInvoker> SingleInvokerPtr;
-  typedef tbb::concurrent_unordered_map<edm::TypeID, SingleInvokerPtr,edm::TypeIDHasher> InvokerMap;
+  typedef hpx::concurrent::unordered_map<edm::TypeID, SingleInvokerPtr,edm::TypeIDHasher> InvokerMap;
 private: // Private Data Members
   std::string name_;
   std::vector<AnyMethodArgument> argsBeforeFixups_;

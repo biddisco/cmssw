@@ -29,7 +29,7 @@ namespace {
          return iKey.smallHash();
       }
    };
-   typedef tbb::concurrent_unordered_map<edm::ParameterSetID, edm::TriggerNames, key_hash> TriggerNamesMap;
+   typedef hpx::concurrent::unordered_map<edm::ParameterSetID, edm::TriggerNames, key_hash> TriggerNamesMap;
    [[cms::thread_safe]] static TriggerNamesMap triggerNamesMap;
 }
 

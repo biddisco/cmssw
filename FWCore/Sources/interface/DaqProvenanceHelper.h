@@ -29,7 +29,7 @@ namespace edm {
 
   struct DaqProvenanceHelper {
     typedef std::map<ProcessHistoryID, ProcessHistoryID> ProcessHistoryIDMap;
-    typedef tbb::concurrent_unordered_map<ParentageID, ParentageID, dqh::parentage_hash> ParentageIDMap;
+    typedef hpx::concurrent::unordered_map<ParentageID, ParentageID, dqh::parentage_hash> ParentageIDMap;
     explicit DaqProvenanceHelper(TypeID const& rawDataType);
     ProcessHistoryID daqInit(ProductRegistry& productRegistry, ProcessHistoryRegistry& processHistoryRegistry) const;
     void saveInfo(BranchDescription const& oldBD, BranchDescription const& newBD) {

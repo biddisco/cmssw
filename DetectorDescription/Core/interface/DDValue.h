@@ -112,11 +112,11 @@ private:
   
   void init( const std::string & );
  
-  using Names = tbb::concurrent_vector<StringHolder,tbb::zero_allocator<StringHolder>>;
+  using Names = hpx::concurrent::concurrent_vector<StringHolder,tbb::zero_allocator<StringHolder>>;
   static Names& names();
   static Names initializeNames();
 
-  using NamesToIndicies = tbb::concurrent_unordered_map<std::string,AtomicUInt>;
+  using NamesToIndicies = hpx::concurrent::unordered_map<std::string,AtomicUInt>;
   static NamesToIndicies& indexer();
 
   unsigned int id_;

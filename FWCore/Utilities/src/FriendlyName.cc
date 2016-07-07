@@ -139,7 +139,7 @@ namespace edm {
        return result;
     }
     std::string friendlyName(std::string const& iFullName) {
-       typedef tbb::concurrent_unordered_map<std::string, std::string> Map;
+       typedef hpx::concurrent::unordered_map<std::string, std::string> Map;
        static Map s_fillToFriendlyName;
        auto itFound = s_fillToFriendlyName.find(iFullName);
        if(s_fillToFriendlyName.end()==itFound) {

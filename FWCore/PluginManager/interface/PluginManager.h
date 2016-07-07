@@ -122,7 +122,7 @@ class PluginManager
                                                   bool& ioThrowIfFailElseSucceedStatus);
       // ---------- member data --------------------------------
       SearchPath searchPath_;
-      tbb::concurrent_unordered_map<boost::filesystem::path, std::shared_ptr<SharedLibrary>, PluginManagerPathHasher > loadables_;
+      hpx::concurrent::unordered_map<boost::filesystem::path, std::shared_ptr<SharedLibrary>, PluginManagerPathHasher > loadables_;
       
       CategoryToInfos categoryToInfos_;
       std::recursive_mutex pluginLoadMutex_;

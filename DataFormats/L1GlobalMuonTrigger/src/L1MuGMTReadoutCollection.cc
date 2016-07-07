@@ -16,7 +16,7 @@
 // user include files
 #include "DataFormats/L1GlobalMuonTrigger/interface/L1MuGMTReadoutCollection.h"
 
-static tbb::concurrent_unordered_map<int, L1MuGMTReadoutRecord> s_empty_record_cache;
+static hpx::concurrent::unordered_map<int, L1MuGMTReadoutRecord> s_empty_record_cache;
 
 L1MuGMTReadoutRecord const&
 L1MuGMTReadoutCollection::getDefaultFor(int bx) {

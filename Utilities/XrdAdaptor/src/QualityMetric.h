@@ -68,7 +68,7 @@ private:
 
     [[cms::thread_safe]] static QualityMetricFactory m_instance;
 
-    typedef tbb::concurrent_unordered_map<std::string, QualityMetricUniqueSource*> MetricMap;
+    typedef hpx::concurrent::unordered_map<std::string, QualityMetricUniqueSource*> MetricMap;
     MetricMap m_sources;
 };
 

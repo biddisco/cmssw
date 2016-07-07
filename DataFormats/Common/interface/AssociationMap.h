@@ -69,7 +69,7 @@ namespace edm {
     /// type return by operator[]
     typedef typename value_type::value_type result_type;
     /// transient map type
-    typedef typename tbb::concurrent_unordered_map<index_type, value_type> internal_transient_map_type;
+    typedef typename hpx::concurrent::unordered_map<index_type, value_type> internal_transient_map_type;
 
     /// const iterator
     struct const_iterator {

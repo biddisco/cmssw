@@ -59,7 +59,7 @@ namespace edm {
           return iKey.smallHash();
         }
       };
-      typedef tbb::concurrent_unordered_map<key_type,value_type,key_hash> map_type;
+      typedef hpx::concurrent::unordered_map<key_type,value_type,key_hash> map_type;
       typedef map_type::const_iterator const_iterator;
 
       const_iterator begin() const {

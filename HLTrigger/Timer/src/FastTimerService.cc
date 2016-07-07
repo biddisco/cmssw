@@ -446,8 +446,8 @@ void FastTimerService::preStreamBeginRun(edm::StreamContext const & sc)
 
           // use a mutex to prevent two threads from assigning to the same element at the same time 
           static std::mutex                          dup_mutex;
-          // use a tbb::concurrent_vector because growing does not invalidate existing iterators and pointers
-          static tbb::concurrent_vector<std::string> dup;
+          // use a hpx::concurrent::concurrent_vector because growing does not invalidate existing iterators and pointers
+          static hpx::concurrent::concurrent_vector<std::string> dup;
           // lock, and fill the first 32 elements
           if (dup.empty()) {
             std::lock_guard<std::mutex> lock(dup_mutex);

@@ -46,7 +46,7 @@ class EcalLaserDbService {
   const EcalLaserAPDPNRatios* mAPDPNRatios_;  
   const EcalLinearCorrections* mLinearCorrections_;  
 
-  typedef tbb::concurrent_unordered_set<uint32_t> ErrorMapT;
+  typedef hpx::concurrent::unordered_set<uint32_t> ErrorMapT;
   mutable ErrorMapT channelsWithInvalidCorrection_;
 
 };

@@ -76,8 +76,8 @@ struct InputTagHash {
 };
 struct GlobalInputTags {
   GlobalInputTags(): filterTagsGlobal_(),collectionTagsGlobal_(){ }
-  mutable tbb::concurrent_unordered_set<edm::InputTag,InputTagHash> filterTagsGlobal_;
-  mutable tbb::concurrent_unordered_set<edm::InputTag,InputTagHash> collectionTagsGlobal_;
+  mutable hpx::concurrent::unordered_set<edm::InputTag,InputTagHash> filterTagsGlobal_;
+  mutable hpx::concurrent::unordered_set<edm::InputTag,InputTagHash> collectionTagsGlobal_;
 };
  
 class TriggerSummaryProducerAOD : public edm::stream::EDProducer<edm::GlobalCache<GlobalInputTags>> {
