@@ -21,13 +21,13 @@
 </library>
 <library   file="stubs/TestTBBTasksAnalyzer.cc,stubs/TestNThreadsChecker.cc" name="TestTBBTasksAnalyzer">
   <flags   EDM_PLUGIN="1"/>
-  <use   name="tbb"/>
+  <use   name="hpx"/>
   <use   name="DataFormats/Common"/>
   <use   name="FWCore/Framework"/>
   <use   name="FWCore/ParameterSet"/>
 </library>
 <bin   name="TestFWCoreFrameworkTBBTasks" file="TestDriver.cpp">
-  <flags   TEST_RUNNER_ARGS=" /bin/bash FWCore/Framework/test run_tbbTasks.sh"/>
+  <flags   TEST_RUNNER_ARGS=" /bin/bash FWCore/Framework/test run_hpxTasks.sh"/>
   <use   name="FWCore/Utilities"/>
 </bin>
 <library   file="stubs/TestTriggerNames.cc" name="TestTriggerNames">
